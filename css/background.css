@@ -1,0 +1,54 @@
+.aurora{
+    position: fixed;
+    inset: 0;
+    overflow: hidden;
+    z-index: -2;
+    pointer-events: none;
+}
+
+.aurora span{
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    filter: blur(120px);
+    opacity: .18;
+}
+
+.aurora span:nth-child(1){
+    background: #2563eb;
+    top: -150px;
+    left: -150px;
+    animation: floatGlow1 15s ease-in-out infinite alternate;
+}
+
+.aurora span:nth-child(2){
+    background: #06b6d4;
+    bottom: -150px;
+    right: -150px;
+    animation: floatGlow2 18s ease-in-out infinite alternate;
+}
+
+@keyframes floatGlow1{
+
+    from{
+        transform: translate(0,0);
+    }
+
+    to{
+        transform: translate(250px,180px);
+    }
+
+}
+
+@keyframes floatGlow2{
+
+    from{
+        transform: translate(0,0);
+    }
+
+    to{
+        transform: translate(-250px,-180px);
+    }
+
+}
