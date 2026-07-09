@@ -52,3 +52,119 @@
     }
 
 }
+
+
+
+
+.particles{
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.particles span{
+    position: absolute;
+
+    width: 6px;
+    height: 6px;
+
+    border-radius: 50%;
+
+    background: #38bdf8;
+
+    box-shadow: 0 0 15px #38bdf8;
+
+    animation: floatParticle 12s linear infinite;
+}
+
+.particles span:nth-child(1){top:10%;left:20%;animation-delay:0s;}
+.particles span:nth-child(2){top:40%;left:70%;animation-delay:2s;}
+.particles span:nth-child(3){top:75%;left:30%;animation-delay:4s;}
+.particles span:nth-child(4){top:60%;left:85%;animation-delay:1s;}
+.particles span:nth-child(5){top:20%;left:50%;animation-delay:5s;}
+.particles span:nth-child(6){top:80%;left:60%;animation-delay:3s;}
+.particles span:nth-child(7){top:35%;left:10%;animation-delay:6s;}
+.particles span:nth-child(8){top:90%;left:90%;animation-delay:7s;}
+
+
+
+.network{
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.node{
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #38bdf8;
+    box-shadow: 0 0 15px #38bdf8;
+    animation: pulse 3s infinite ease-in-out;
+}
+
+.n1{top:15%; left:20%;}
+.n2{top:35%; left:45%;}
+.n3{top:25%; left:75%;}
+.n4{top:60%; left:30%;}
+.n5{top:70%; left:65%;}
+.n6{top:85%; left:85%;}
+
+@keyframes pulse{
+
+    0%,100%{
+        transform: scale(1);
+        opacity:.5;
+    }
+
+    50%{
+        transform: scale(1.6);
+        opacity:1;
+    }
+
+}
+
+.network::before,
+.network::after{
+    content:"";
+    position:absolute;
+    height:2px;
+    background:linear-gradient(90deg,
+        transparent,
+        rgba(56,189,248,.6),
+        transparent);
+    animation: flow 5s linear infinite;
+}
+
+.network::before{
+    width:300px;
+    top:28%;
+    left:20%;
+    transform:rotate(18deg);
+}
+
+.network::after{
+    width:350px;
+    top:62%;
+    left:30%;
+    transform:rotate(-12deg);
+}
+
+@keyframes flow{
+
+    0%{
+        opacity:.2;
+    }
+
+    50%{
+        opacity:1;
+    }
+
+    100%{
+        opacity:.2;
+    }
+
+}
