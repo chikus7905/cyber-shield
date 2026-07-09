@@ -18,8 +18,37 @@
     <link rel="stylesheet" href="css/animations.css" />
     <link rel="stylesheet" href="css/responsive.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/background.css" />
   </head>
   <body>
+
+    <!--=====================================
+             background animations 
+             ===========================-->
+    <div class="aurora">
+    <span></span>
+    <span></span>
+</div>
+
+<div class="particles">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+
+<div class="network">
+    <span class="node n1"></span>
+    <span class="node n2"></span>
+    <span class="node n3"></span>
+    <span class="node n4"></span>
+    <span class="node n5"></span>
+    <span class="node n6"></span>
+</div>
     <header>
       <nav class="navbar">
         <div class="container nav-container">
@@ -178,96 +207,282 @@
           </div>
         </div>
         <div class="scroll-indicator">
+          <div class="mouse">
+            <div class="wheel"></div>
+          </div>
 
-    <div class="mouse">
-        <div class="wheel"></div>
-    </div>
-
-    <span>Scroll to Explore</span>
-
-</div>
+          <span>Scroll to Explore</span>
+        </div>
       </section>
 
       <!--================== cybersecurity section  ============== -->
       <section class="essentials" id="learn">
-          <div class="container">
-            <div class="section-header">
-              <span class="section-tag">
-                Learn Fundamentals
-              </span>
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag"> Learn Fundamentals </span>
 
-              <h2>What is 
-                <span>CyberSecurity?</span>
-              </h2>
+            <h2>
+              CyberSecurity
+              <span>Essentials</span>
+            </h2>
 
-              <p>Build a strong foundation by learning the most important cybersecurity Concepts that helps protect your devices, data, and online identity.</p>
+            <p>
+             Master the core concepts every internet user should know—from malware and phishing to encryption and network security.
+            </p>
+          </div>
+
+          <div class="essentials-grid">
+            <!--===============- card 1===================== -->
+            <div class="essential-card">
+              <img src="assets/Icons/mallware-icon.png" alt="mallware-icon" />
+              <h3>Malware</h3>
+
+              <p>
+                Malicious software are designed to damage,steal data,or disrupt
+                computer systems.
+              </p>
+
+              <a href="#">Learn More</a>
             </div>
 
-            <div class="essentials-grid">
-              <!--===============- card 1===================== -->
-                <div class="essential-card">
-                  <img src="assets/Icons/mallware-icon.png" alt="mallware-icon">
-                  <h3>Malware</h3>
+            <!--===============- card 2===================== -->
+            <div class="essential-card">
+              <img src="assets/Icons/phising-icon.png" alt="phising-icon" />
+              <h3>Phising</h3>
 
-                  <p>Malicious software are designed to damage,steal data,or disrupt computer systems.</p>
+              <p>
+                Fake emails and websites designed to trick users into revealing
+                sensitive information.
+              </p>
 
-                  <a href="#">Learn More</a>
-                </div>
+              <a href="#">Learn More</a>
+            </div>
 
-                <!--===============- card 2===================== -->
-                <div class="essential-card">
-                  <img src="assets/Icons/phising-icon.png" alt="phising-icon">
-                  <h3>Phising</h3>
+            <!--===============- card 3===================== -->
+            <div class="essential-card">
+              <img src="assets/Icons/virus_icon.png" alt="Virus-icon" />
+              <h3>Virus</h3>
 
-                  <p>Fake emails and websites designed to trick users into revealing sensitive information.</p>
+              <p>Malicious software are designed to damage computer systems.</p>
 
-                  <a href="#">Learn More</a>
-                </div>
+              <a href="#">Learn More</a>
+            </div>
 
-                <!--===============- card 3===================== -->
-                <div class="essential-card">
-                  <img src="assets/Icons/virus_icon.png" alt="Virus-icon">
-                  <h3>Virus</h3>
+            <!--===============- card 4===================== -->
+            <div class="essential-card">
+              <img src="assets/Icons/firewall_icon.png" alt="firewall-icon" />
+              <h3>Firewall</h3>
 
-                  <p>Malicious software are designed to damage computer systems.</p>
+              <p>
+                A security system that monitors and filters incoming and
+                outgoing network traffic.
+              </p>
 
-                  <a href="#">Learn More</a>
-                </div>
+              <a href="#">Learn More</a>
+            </div>
 
-                <!--===============- card 4===================== -->
-                <div class="essential-card">
-                  <img src="assets/Icons/firewall_icon.png" alt="firewall-icon">
-                  <h3>Firewall</h3>
+            <!--===============- card 5===================== -->
+            <div class="essential-card">
+              <img
+                src="assets/Icons/encryption-icon.png"
+                alt="encryption-icon"
+              />
+              <h3>Encryption</h3>
 
-                  <p>A security system that monitors and filters incoming and outgoing network traffic.</p>
+              <p>
+                Converts readable data into unreadable code to keep it secure.
+              </p>
 
-                  <a href="#">Learn More</a>
-                </div>
+              <a href="#">Learn More</a>
+            </div>
 
-                <!--===============- card 5===================== -->
-                <div class="essential-card">
-                  <img src="assets/Icons/encryption-icon.png" alt="encryption-icon">
-                  <h3>Encryption</h3>
+            <!--===============- card 6===================== -->
+            <div class="essential-card">
+              <img src="assets/Icons/network_icon.png" alt="network" />
+              <h3>Network Security</h3>
 
-                  <p>Converts readable data into unreadable code to keep it secure.</p>
+              <p>
+                Protects computer networks from unauthorized access and cyber
+                attacks.
+              </p>
 
-                  <a href="#">Learn More</a>
-                </div>
-
-                <!--===============- card 6===================== -->
-                <div class="essential-card">
-                  <img src="assets/Icons/network_icon.png" alt="network">
-                  <h3>Network Security</h3>
-
-                  <p>Protects computer networks from unauthorized access and cyber attacks.</p>
-
-                  <a href="#">Learn More</a>
-                </div>
-
-
+              <a href="#">Learn More</a>
             </div>
           </div>
+        </div>
       </section>
+
+     <!-- ===========================
+     HOW INTERNET WORKS
+=========================== -->
+
+<section class="internet-section" id="internet">
+
+    <div class="container">
+
+        <!-- Section Heading -->
+
+        <div class="section-header">
+
+            <span class="section-tag">
+                <!-- <img src="assets/Icons/network.png" alt="Globe"> -->
+🌐Internet Basics
+            </span>
+
+            <h2 class="section-title">
+                How the <span>Internet</span> Works
+            </h2>
+
+            <p class="section-description">
+                Every website you visit follows the same journey. Your request travels
+                through different devices before reaching a web server and returning the
+                webpage to your browser in just a few milliseconds.
+            </p>
+
+        </div>
+
+        <!-- Timeline Starts -->
+
+        <div class="internet-timeline">
+            <div class="timeline-track">
+
+    <!-- Step 1 -->
+   <div class="timeline-item">
+
+    <div class="timeline-icon">
+        <img src="assets/Icons/internet/computer.png" alt="Device">
+    </div>
+
+    <h3 class="timeline-title">Your Device</h3>
+
+    <div class="timeline-popup">
+
+        <h4>Your Device</h4>
+
+        <p>
+            You type a website address or click a link. Your browser prepares a request to send over the Internet.
+        </p>
+
+    </div>
+
+</div>
+<div class="timeline-arrow">
+    <span></span>
+</div>
+    <!-- Step 2 -->
+    <div class="timeline-item">
+
+    <div class="timeline-icon">
+        <img src="assets/Icons/internet/router.png" alt="Router">
+    </div>
+
+    <h3 class="timeline-title">Router</h3>
+
+    <div class="timeline-popup">
+
+        <h4>Wi-Fi Router</h4>
+
+        <p>
+            The router forwards your request from your device to your Internet Service Provider.
+        </p>
+
+    </div>
+
+</div>
+<div class="timeline-arrow">
+    <span></span>
+</div>
+    <!-- Step 3 -->
+    <div class="timeline-item">
+
+    <div class="timeline-icon">
+        <img src="assets/Icons/internet/isp.png" alt="Router">
+    </div>
+
+    <h3 class="timeline-title">Router</h3>
+
+    <div class="timeline-popup">
+
+        <h4>Wi-Fi Router</h4>
+
+        <p>
+            The router forwards your request from your device to your Internet Service Provider.
+        </p>
+
+    </div>
+
+</div>
+<div class="timeline-arrow">
+    <span></span>
+</div>
+    <!-- Step 4 -->
+   <div class="timeline-item">
+
+    <div class="timeline-icon">
+        <img src="assets/Icons/internet/cloud.png" alt="Router">
+    </div>
+
+    <h3 class="timeline-title">Router</h3>
+
+    <div class="timeline-popup">
+
+        <h4>Wi-Fi Router</h4>
+
+        <p>
+            The router forwards your request from your device to your Internet Service Provider.
+        </p>
+
+    </div>
+
+</div>
+<div class="timeline-arrow">
+    <span></span>
+</div>
+    <!-- Step 5 -->
+    <div class="timeline-item">
+
+    <div class="timeline-icon">
+        <img src="assets/Icons/internet/server.png" alt="Router">
+    </div>
+
+    <h3 class="timeline-title">Router</h3>
+
+    <div class="timeline-popup">
+
+        <h4>Wi-Fi Router</h4>
+
+        <p>
+            The router forwards your request from your device to your Internet Service Provider.
+        </p>
+
+    </div>
+
+</div>
+<div class="timeline-arrow">
+    <span></span>
+</div>
+    <!-- Step 6 -->
+    <div class="timeline-item">
+
+    <div class="timeline-icon">
+        <img src="assets/Icons/internet/globe.png" alt="Router">
+    </div>
+
+    <h3 class="timeline-title">Router</h3>
+
+    <div class="timeline-popup">
+
+        <h4>Wi-Fi Router</h4>
+
+        <p>
+            The router forwards your request from your device to your Internet Service Provider.
+        </p>
+
+    </div>
+
+</div>
+
+</section>
     </main>
   </body>
 </html>
