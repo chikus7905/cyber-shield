@@ -80,3 +80,21 @@ transform: translateY();
 
 }
 
+
+@keyframes pulseGlow{
+
+    0%{
+        box-shadow:0 0 10px rgba(56,189,248,.3);
+    }
+
+    50%{
+        box-shadow:
+            0 0 20px rgba(56,189,248,.8),
+            0 0 40px rgba(56,189,248,.5);
+    }
+
+    100%{
+        box-shadow:0 0 10px rgba(56,189,248,.3);
+    }
+
+}

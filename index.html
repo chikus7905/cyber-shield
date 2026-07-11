@@ -399,14 +399,14 @@
         <img src="assets/Icons/internet/isp.png" alt="Router">
     </div>
 
-    <h3 class="timeline-title">Router</h3>
+    <h3 class="timeline-title">ISP</h3>
 
     <div class="timeline-popup">
 
-        <h4>Wi-Fi Router</h4>
+        <h4>Internet Service Provider</h4>
 
         <p>
-            The router forwards your request from your device to your Internet Service Provider.
+            Connects your device to the global internet.
         </p>
 
     </div>
@@ -419,17 +419,17 @@
    <div class="timeline-item">
 
     <div class="timeline-icon">
-        <img src="assets/Icons/internet/cloud.png" alt="Router">
+        <img src="assets/Icons/internet/cloud.png" alt="Internet">
     </div>
 
-    <h3 class="timeline-title">Router</h3>
+    <h3 class="timeline-title">Internet</h3>
 
     <div class="timeline-popup">
 
-        <h4>Wi-Fi Router</h4>
+        <h4>Internet</h4>
 
         <p>
-            The router forwards your request from your device to your Internet Service Provider.
+            Carries your request across thousand of networks.
         </p>
 
     </div>
@@ -445,14 +445,14 @@
         <img src="assets/Icons/internet/server.png" alt="Router">
     </div>
 
-    <h3 class="timeline-title">Router</h3>
+    <h3 class="timeline-title">Server</h3>
 
     <div class="timeline-popup">
 
-        <h4>Wi-Fi Router</h4>
+        <h4>DNS Sever</h4>
 
         <p>
-            The router forwards your request from your device to your Internet Service Provider.
+           Converts the website name(google.com) into an IP address.
         </p>
 
     </div>
@@ -468,14 +468,14 @@
         <img src="assets/Icons/internet/globe.png" alt="Router">
     </div>
 
-    <h3 class="timeline-title">Router</h3>
+    <h3 class="timeline-title">Website</h3>
 
     <div class="timeline-popup">
 
-        <h4>Wi-Fi Router</h4>
+        <h4>WebSite</h4>
 
         <p>
-            The router forwards your request from your device to your Internet Service Provider.
+            Your browser receives the data and displays the webpage.
         </p>
 
     </div>
@@ -483,6 +483,153 @@
 </div>
 
 </section>
+<!-- simulator section -->
+
+<section class="simulation-section" id="simulation">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <span class="section-tag">
+                <i data-lucide="shield-alert"></i>
+                Interactive Simulation
+            </span>
+
+            <h2 class="section-title">
+                How a <span>Phishing Attack</span> Works
+            </h2>
+
+            <p class="section-description">
+                Follow the journey of a phishing attack step by step and learn how hackers try to steal sensitive information.
+            </p>
+
+        </div>
+
+        <div class="simulation-container">
+          
+<div class="simulation-track">
+<div class="data-packet"></div>
+    <div class="simulation-step active">
+        <div class="step-icon">
+            <img src="assets/Icons/mallware-icon.png" alt="User">
+        </div>
+
+        <h3>User</h3>
+
+        <p class="step-description">
+            A user receives an email.
+        </p>
+    </div>
+
+    <div class="simulation-line"></div>
+
+    <div class="simulation-step">
+        <div class="step-icon">
+            <img src="assets/icons/simulation/email.png" alt="Email">
+        </div>
+
+        <h3>Fake Email</h3>
+
+        <p class="step-description">
+            A phishing email pretends to be from a trusted company.
+        </p>
+    </div>
+
+    <div class="simulation-line"></div>
+
+    <div class="simulation-step">
+        <div class="step-icon">
+            <img src="assets/icons/simulation/link.png" alt="Link">
+        </div>
+
+        <h3>Malicious Link</h3>
+
+        <p class="step-description">
+            The victim clicks a fake login link.
+        </p>
+    </div>
+
+    <div class="simulation-line"></div>
+
+    <div class="simulation-step">
+        <div class="step-icon">
+            <img src="assets/icons/simulation/login.png" alt="Login">
+        </div>
+
+        <h3>Fake Login</h3>
+
+        <p class="step-description">
+            The attacker collects the entered username and password.
+        </p>
+    </div>
+
+    <div class="simulation-line"></div>
+
+    <div class="simulation-step">
+        <div class="step-icon">
+            <img src="assets/icons/simulation/shield.png" alt="Protection">
+        </div>
+
+        <h3>Stay Safe</h3>
+
+        <p class="step-description">
+            Always verify links, enable MFA, and never share your credentials.
+        </p>
+    </div>
+
+</div>
+<div class="simulation-info">
+
+    <h3 id="simulationTitle">User Receives Email</h3>
+
+    <p id="simulationText">
+        The attack begins when a phishing email arrives in the user's inbox.
+    </p>
+
+</div>
+<div class="simulation-progress">
+
+    <div class="progress-bar">
+        <div class="progress-fill"></div>
+    </div>
+
+    <span class="progress-text">
+        Step 1 of 5
+    </span>
+
+</div>
+
+<div class="simulation-complete" id="simulationComplete">
+
+    <i data-lucide="badge-check"></i>
+
+    <h3>Simulation Completed!</h3>
+
+    <p>
+        Great job! You have learned how a phishing attack works and how to protect yourself online.
+    </p>
+
+</div>
+
+<div class="simulation-controls">
+
+    <button class="btn btn-primary" id="nextStep">
+        Next Step
+    </button>
+
+    <button class="btn btn-outline" id="resetSimulation">
+        Reset
+    </button>
+</div>
+        </div>
+
+    </div>
+
+</section>
+
+sec
     </main>
+    <script src="js/simulation.js"></script>
   </body>
 </html>
