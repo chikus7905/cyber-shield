@@ -608,7 +608,7 @@
 
             <span class="section-tag">
                 <i data-lucide="shield-alert"></i>
-                Interactive Simulation
+                Interactive Journey
             </span>
 
             <h2 class="section-title">
@@ -616,132 +616,165 @@
             </h2>
 
             <p class="section-description">
-                Follow the journey of a phishing attack step by step and learn how hackers try to steal sensitive information.
+                Explore each stage of a phishing attack by hovering over the cards. Learn how attackers trick users and how you can stay safe online.
             </p>
 
         </div>
 
-        <div class="simulation-container">
-          
-<div class="simulation-track">
-<div class="data-packet"></div>
-    <div class="simulation-step active">
-        <div class="step-icon">
-            <!-- <img src="assets/Icons/cloud.png" alt="User"> -->
-             👨‍💻
+    <div class="journey-wrapper">
+         <div class="journey">
+
+            <!-- Step 1 -->
+
+            <div class="journey-item">
+
+                <div class="journey-icon">
+                    <!-- <img src="assets/icons/simulation/user.png" alt="User"> -->
+                     <span>💻</span>
+                </div>
+
+                <div class="journey-card">
+
+                    <span class="step-number">
+                        Step 1
+                    </span>
+
+                    <h3>User Receives Email</h3>
+
+                    <p>
+                        The attack begins when the victim receives a fake email that appears to come from a trusted organization.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="journey-arrow">
+
+                <i data-lucide="arrow-right"></i>
+
+            </div>
+
+            <!-- Step 2 -->
+
+            <div class="journey-item">
+
+                <div class="journey-icon">
+                    <!-- <img src="assets/icons/simulation/email.png" alt="Email"> -->
+                     <span>📧</span>
+                </div>
+
+                <div class="journey-card">
+
+                    <span class="step-number">
+                        Step 2
+                    </span>
+
+                    <h3>Fake Email</h3>
+
+                    <p>
+                        The email creates urgency or fear and encourages the user to click a malicious link.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="journey-arrow">
+
+                <i data-lucide="arrow-right"></i>
+
+            </div>
+
+            <!-- Step 3 -->
+
+            <div class="journey-item">
+
+                <div class="journey-icon">
+                    <!-- <img src="assets/icons/simulation/link.png" alt="Link"> -->
+                     <span>🔗</span>
+                </div>
+
+                <div class="journey-card">
+
+                    <span class="step-number">
+                        Step 3
+                    </span>
+
+                    <h3>Malicious Link</h3>
+
+                    <p>
+                        The victim clicks the link and is redirected to a fake website that looks legitimate.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="journey-arrow">
+
+                <i data-lucide="arrow-right"></i>
+
+            </div>
+
+            <!-- Step 4 -->
+
+            <div class="journey-item">
+
+                <div class="journey-icon">
+                    <!-- <img src="assets/icons/simulation/login.png" alt="Login"> -->
+                     <span>👩‍💻</span>
+                </div>
+
+                <div class="journey-card">
+
+                    <span class="step-number">
+                        Step 4
+                    </span>
+
+                    <h3>Fake Login Page</h3>
+
+                    <p>
+                        The victim enters their username and password, unknowingly sending them to the attacker.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="journey-arrow">
+
+                <i data-lucide="arrow-right"></i>
+
+            </div>
+
+            <!-- Step 5 -->
+
+            <div class="journey-item">
+
+                <div class="journey-icon safe">
+                    <!-- <img src="assets/icons/simulation/shield.png" alt="Stay Safe"> -->
+                     <span>🛡</span>
+                </div>
+
+                <div class="journey-card">
+
+                    <span class="step-number">
+                        Prevention
+                    </span>
+
+                    <h3>Stay Safe</h3>
+
+                    <p>
+                        Always verify links, enable Multi-Factor Authentication (MFA), and never enter credentials on suspicious websites.
+                    </p>
+
+                </div>
+
+            </div>
+
         </div>
-
-        <h3>User</h3>
-
-        <p class="step-description">
-            A user receives an email.
-        </p>
-    </div>
-
-    <div class="simulation-line"></div>
-
-    <div class="simulation-step">
-        <div class="step-icon">
-            <!-- <img src="assets/icons/simulation/email.png" alt="Email"> -->
-             📧
-        </div>
-
-        <h3>Fake Email</h3>
-
-        <p class="step-description">
-            A phishing email pretends to be from a trusted company.
-        </p>
-    </div>
-
-    <div class="simulation-line"></div>
-
-    <div class="simulation-step">
-        <div class="step-icon">
-            <img src="assets/icons/mallware-icon.png" alt="Link">
-            
-        </div>
-
-        <h3>Malicious Link</h3>
-
-        <p class="step-description">
-            The victim clicks a fake login link.
-        </p>
-    </div>
-
-    <div class="simulation-line"></div>
-
-    <div class="simulation-step">
-        <div class="step-icon">
-            <!-- <img src="assets/icons/simulation/login.png" alt="Login"> -->
-             🔏
-        </div>
-
-        <h3>Fake Login</h3>
-
-        <p class="step-description">
-            The attacker collects the entered username and password.
-        </p>
-    </div>
-
-    <div class="simulation-line"></div>
-
-    <div class="simulation-step">
-        <div class="step-icon">
-            <img src="assets/icons/sheild-icon.png" alt="Protection">
-        </div>
-
-        <h3>Stay Safe</h3>
-
-        <p class="step-description">
-            Always verify links, enable MFA, and never share your credentials.
-        </p>
-    </div>
-
-</div>
-<div class="simulation-info">
-
-    <h3 id="simulationTitle">User Receives Email</h3>
-
-    <p id="simulationText">
-        The attack begins when a phishing email arrives in the user's inbox.
-    </p>
-
-</div>
-<div class="simulation-progress">
-
-    <div class="progress-bar">
-        <div class="progress-fill"></div>
-    </div>
-
-    <span class="progress-text">
-        Step 1 of 5
-    </span>
-
-</div>
-
-<div class="simulation-complete" id="simulationComplete">
-
-    <i data-lucide="badge-check"></i>
-
-    <h3>Simulation Completed!</h3>
-
-    <p>
-        Great job! You have learned how a phishing attack works and how to protect yourself online.
-    </p>
-
-</div>
-
-<div class="simulation-controls">
-
-    <button class="btn btn-primary" id="nextStep">
-        Next Step
-    </button>
-
-    <button class="btn btn-outline" id="resetSimulation">
-        Reset
-    </button>
-</div>
-        </div>
+       </div>
 
     </div>
 
