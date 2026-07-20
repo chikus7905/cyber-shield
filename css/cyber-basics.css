@@ -1,0 +1,101 @@
+/*=========================
+      Lesson Hero
+=========================*/
+
+.lesson-hero{
+
+    padding:170px 0 120px;
+
+    text-align:center;
+
+}
+
+.lesson-content{
+
+    max-width:850px;
+
+    margin:auto;
+
+}
+
+.lesson-content h1{
+
+    font-size:4rem;
+
+    color:var(--text);
+
+    margin:25px 0;
+
+}
+
+.lesson-content h1 span{
+
+    color:var(--primary);
+
+}
+
+.lesson-content p{
+
+    max-width:720px;
+
+    margin:auto;
+
+    color:var(--text-secondary);
+
+    line-height:1.9;
+
+    font-size:1.08rem;
+
+}
+
+.lesson-meta{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+    margin-top:45px;
+
+}
+
+.lesson-meta span{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:12px 22px;
+
+    border-radius:50px;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+}
+
+.lesson-meta svg{
+
+    width:18px;
+
+    height:18px;
+
+    color:var(--primary);
+
+}
+
+@media(max-width:768px){
+
+    .lesson-content h1{
+
+        font-size:2.8rem;
+
+    }
+
+}
