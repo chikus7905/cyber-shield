@@ -1,0 +1,1137 @@
+/*=========================
+        Lesson Hero
+=========================*/
+
+.lesson-hero{
+
+    padding:170px 0 120px;
+
+}
+
+.breadcrumb{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:10px;
+
+    margin-bottom:40px;
+
+    color:var(--text-secondary);
+
+    font-size:.95rem;
+
+}
+
+.breadcrumb a{
+
+    color:var(--text-secondary);
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.breadcrumb a:hover{
+
+    color:var(--primary);
+
+}
+
+.lesson-content{
+
+    max-width:850px;
+
+    margin:auto;
+
+    text-align:center;
+
+}
+
+.lesson-content h1{
+
+    font-size:4rem;
+
+    margin:25px 0;
+
+    color:var(--text);
+
+}
+
+.lesson-content h1 span{
+
+    color:var(--primary);
+
+}
+
+.lesson-content p{
+
+    max-width:720px;
+
+    margin:auto;
+
+    line-height:1.9;
+
+    color:var(--text-secondary);
+
+    font-size:1.05rem;
+
+}
+
+.lesson-meta{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+    margin-top:45px;
+
+}
+
+.lesson-meta span{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:14px 22px;
+
+    border-radius:50px;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    color:var(--text);
+
+}
+
+.lesson-meta svg{
+
+    width:18px;
+
+    height:18px;
+
+    color:var(--primary);
+
+}
+
+/*=========================
+     Table of Contents
+=========================*/
+
+.toc-section{
+
+    padding:110px 0;
+
+}
+
+.toc-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+.toc-card{
+
+    text-decoration:none;
+
+    padding:35px;
+
+    border-radius:24px;
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:.35s;
+
+}
+
+.toc-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:var(--primary);
+
+    box-shadow:0 20px 45px rgba(56,189,248,.18);
+
+}
+
+.toc-card span{
+
+    display:inline-flex;
+
+    width:56px;
+
+    height:56px;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:16px;
+
+    background:rgba(56,189,248,.12);
+
+    color:var(--primary);
+
+    font-weight:700;
+
+    margin-bottom:20px;
+
+}
+
+.toc-card h3{
+
+    color:var(--text);
+
+    margin-bottom:12px;
+
+}
+
+/*=========================
+      Lesson Section
+=========================*/
+
+.lesson-section{
+
+    padding:110px 0;
+
+}
+
+.lesson-grid{
+
+    display:grid;
+
+    grid-template-columns:1.2fr .8fr;
+
+    gap:70px;
+
+    align-items:center;
+
+}
+
+.lesson-text h2{
+
+    color:var(--text);
+
+    font-size:2.5rem;
+
+    margin:22px 0;
+
+}
+
+.lesson-text p{
+
+    color:var(--text-secondary);
+
+    line-height:1.9;
+
+    margin-bottom:20px;
+
+}
+
+.key-points{
+
+    display:grid;
+
+    gap:18px;
+
+    margin-top:40px;
+
+}
+
+.point{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    padding:18px 22px;
+
+    border-radius:16px;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+}
+
+.point svg{
+
+    width:20px;
+
+    height:20px;
+
+    color:var(--primary);
+
+}
+
+.image-box{
+
+    height:350px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:28px;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+}
+
+.image-box svg{
+
+    width:120px;
+
+    height:120px;
+
+    color:var(--primary);
+
+}
+
+/*=========================
+    Importance Section
+=========================*/
+
+.importance-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+    margin-top:70px;
+
+}
+
+.importance-card{
+
+    padding:35px;
+
+    text-align:center;
+
+    border-radius:24px;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    backdrop-filter:blur(20px);
+
+    transition:.35s;
+
+}
+
+.importance-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:var(--primary);
+
+    box-shadow:0 20px 40px rgba(56,189,248,.18);
+
+}
+
+.importance-card svg{
+
+    width:48px;
+
+    height:48px;
+
+    color:var(--primary);
+
+    margin-bottom:20px;
+
+}
+
+.importance-card h3{
+
+    color:var(--text);
+
+    margin-bottom:15px;
+
+}
+
+.importance-card p{
+
+    color:var(--text-secondary);
+
+    line-height:1.8;
+
+}
+
+/*=========================
+        CIA Triad
+=========================*/
+
+.cia-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+    margin-top:70px;
+
+}
+
+.cia-card{
+
+    padding:35px;
+
+    text-align:center;
+
+    border-radius:24px;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    backdrop-filter:blur(20px);
+
+    transition:.35s;
+
+}
+
+.cia-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:var(--primary);
+
+    box-shadow:0 20px 40px rgba(56,189,248,.18);
+
+}
+
+.cia-card svg{
+
+    width:52px;
+
+    height:52px;
+
+    color:var(--primary);
+
+    margin-bottom:20px;
+
+}
+
+.cia-card h3{
+
+    color:var(--text);
+
+    margin-bottom:15px;
+
+}
+
+.cia-card p{
+
+    color:var(--text-secondary);
+
+    line-height:1.8;
+
+}
+
+/*=========================
+      Threat Cards
+=========================*/
+
+.threat-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+    margin-top:70px;
+
+}
+
+.threat-card{
+
+    padding:35px;
+
+    border-radius:24px;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    backdrop-filter:blur(20px);
+
+    transition:.35s;
+
+}
+
+.threat-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:#ef4444;
+
+    box-shadow:0 20px 40px rgba(239,68,68,.15);
+
+}
+
+.threat-card svg{
+
+    width:45px;
+
+    height:45px;
+
+    color:#ef4444;
+
+    margin-bottom:20px;
+
+}
+
+.threat-card h3{
+
+    color:var(--text);
+
+    margin-bottom:15px;
+
+}
+
+.threat-card p{
+
+    color:var(--text-secondary);
+
+    line-height:1.8;
+
+}
+
+/*=========================
+      Best Practices
+=========================*/
+
+.practice-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:25px;
+
+    margin-top:70px;
+
+}
+
+.practice-item{
+
+    padding:22px 28px;
+
+    border-radius:18px;
+
+    background:rgba(56,189,248,.08);
+
+    border:1px solid rgba(56,189,248,.18);
+
+    color:var(--text);
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+.practice-item:hover{
+
+    transform:translateX(8px);
+
+}
+
+/*=========================
+        Recap
+=========================*/
+
+.recap-box{
+
+    max-width:850px;
+
+    margin:auto;
+
+    padding:50px;
+
+    text-align:center;
+
+    border-radius:28px;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    backdrop-filter:blur(20px);
+
+}
+
+.recap-box h2{
+
+    color:var(--text);
+
+    margin:25px 0;
+
+}
+
+.recap-box ul{
+
+    text-align:left;
+
+    margin-top:30px;
+
+    padding-left:20px;
+
+}
+
+.recap-box li{
+
+    color:var(--text-secondary);
+
+    margin-bottom:18px;
+
+    line-height:1.8;
+
+}
+
+/*=========================
+      Lesson Navigation
+=========================*/
+
+.lesson-navigation{
+
+    padding:120px 0;
+
+}
+
+.navigation-card{
+
+    max-width:850px;
+
+    margin:auto;
+
+    text-align:center;
+
+    padding:60px 40px;
+
+    border-radius:30px;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    backdrop-filter:blur(20px);
+
+}
+
+.navigation-card h2{
+
+    color:var(--text);
+
+    font-size:2.5rem;
+
+    margin:25px 0;
+
+}
+
+.navigation-card p{
+
+    color:var(--text-secondary);
+
+    max-width:650px;
+
+    margin:auto;
+
+    line-height:1.9;
+
+}
+
+.navigation-card .btn{
+
+    margin-top:40px;
+
+}
+
+/*=========================
+      Responsive
+=========================*/
+
+@media(max-width:992px){
+
+    .lesson-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .toc-grid,
+
+    .importance-grid,
+
+    .cia-grid,
+
+    .threat-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .lesson-content h1{
+
+        font-size:2.8rem;
+
+    }
+
+    .toc-grid,
+
+    .importance-grid,
+
+    .cia-grid,
+
+    .threat-grid,
+
+    .practice-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .lesson-meta{
+
+        flex-direction:column;
+
+        align-items:center;
+
+    }
+
+    .recap-box{
+
+        padding:35px 25px;
+
+    }
+
+    .navigation-card{
+
+        padding:45px 25px;
+
+    }
+
+    .navigation-card h2{
+
+        font-size:2rem;
+
+    }
+
+}
+
+/*=========================
+      Did You Know
+=========================*/
+
+.facts-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:30px;
+
+    margin-top:70px;
+
+}
+
+.fact-card{
+
+    padding:35px;
+
+    border-radius:24px;
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:.35s;
+
+    position:relative;
+
+}
+
+.fact-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:#facc15;
+
+    box-shadow:0 20px 40px rgba(250,204,21,.18);
+
+}
+
+.fact-number{
+
+    display:inline-flex;
+
+    width:55px;
+
+    height:55px;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:16px;
+
+    background:rgba(250,204,21,.15);
+
+    color:#facc15;
+
+    font-weight:700;
+
+    margin-bottom:20px;
+
+}
+
+.fact-card h3{
+
+    color:var(--text);
+
+    margin-bottom:15px;
+
+}
+
+.fact-card p{
+
+    color:var(--text-secondary);
+
+    line-height:1.8;
+
+}
+
+@media(max-width:768px){
+
+    .facts-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+/*=========================
+     Common Mistakes
+=========================*/
+
+.mistakes-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+    margin-top:70px;
+
+}
+
+.mistake-card{
+
+    padding:35px;
+
+    border-radius:24px;
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:.35s;
+
+}
+
+.mistake-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:#f97316;
+
+    box-shadow:0 20px 45px rgba(249,115,22,.18);
+
+}
+
+.mistake-icon{
+
+    width:65px;
+
+    height:65px;
+
+    border-radius:18px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:rgba(249,115,22,.12);
+
+    margin-bottom:22px;
+
+}
+
+.mistake-icon svg{
+
+    width:32px;
+
+    height:32px;
+
+    color:#f97316;
+
+}
+
+.mistake-card h3{
+
+    color:var(--text);
+
+    margin-bottom:15px;
+
+}
+
+.mistake-card p{
+
+    color:var(--text-secondary);
+
+    line-height:1.8;
+
+}
+
+@media(max-width:992px){
+
+    .mistakes-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .mistakes-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+/*=========================
+    Real-Life Examples
+=========================*/
+
+.examples-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+    margin-top:70px;
+
+}
+
+.example-card{
+
+    padding:35px;
+
+    border-radius:24px;
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:.35s;
+
+    text-align:center;
+
+}
+
+.example-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:var(--primary);
+
+    box-shadow:0 20px 45px rgba(56,189,248,.18);
+
+}
+
+.example-icon{
+
+    width:70px;
+
+    height:70px;
+
+    margin:0 auto 25px;
+
+    border-radius:18px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:rgba(56,189,248,.12);
+
+}
+
+.example-icon svg{
+
+    width:34px;
+
+    height:34px;
+
+    color:var(--primary);
+
+}
+
+.example-card h3{
+
+    color:var(--text);
+
+    margin-bottom:15px;
+
+}
+
+.example-card p{
+
+    color:var(--text-secondary);
+
+    line-height:1.8;
+
+}
+
+@media(max-width:992px){
+
+    .examples-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .examples-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+/*=========================
+        Key Terms
+=========================*/
+
+.terms-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:30px;
+
+    margin-top:70px;
+
+}
+
+.term-card{
+
+    padding:35px;
+
+    border-radius:24px;
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:.35s;
+
+}
+
+.term-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:var(--primary);
+
+    box-shadow:0 20px 40px rgba(56,189,248,.18);
+
+}
+
+.term-card h3{
+
+    color:var(--text);
+
+    margin-bottom:18px;
+
+    font-size:1.25rem;
+
+}
+
+.term-card p{
+
+    color:var(--text-secondary);
+
+    line-height:1.8;
+
+}
+
+@media(max-width:768px){
+
+    .terms-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}

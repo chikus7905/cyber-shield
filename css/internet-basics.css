@@ -1,0 +1,717 @@
+/*=========================
+    Internet Flow
+=========================*/
+
+.internet-flow{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:25px;
+
+    overflow-x:auto;
+
+    padding:20px 0;
+
+    scrollbar-width:none;
+
+}
+
+.internet-flow::-webkit-scrollbar{
+
+    display:none;
+
+}
+
+.flow-card{
+
+    min-width:220px;
+
+    padding:30px;
+
+    border-radius:24px;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    backdrop-filter:blur(20px);
+
+    text-align:center;
+
+    transition:.35s;
+
+    flex-shrink:0;
+
+}
+
+.flow-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:var(--primary);
+
+    box-shadow:0 20px 40px rgba(56,189,248,.18);
+
+}
+
+.flow-icon{
+
+    width:70px;
+
+    height:70px;
+
+    margin:0 auto 20px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:18px;
+
+    background:rgba(56,189,248,.12);
+
+}
+
+.flow-icon svg{
+
+    width:34px;
+
+    height:34px;
+
+    color:var(--primary);
+
+}
+
+.flow-card h3{
+
+    color:var(--text);
+
+    margin-bottom:15px;
+
+}
+
+.flow-card p{
+
+    color:var(--text-secondary);
+
+    line-height:1.8;
+
+}
+
+.flow-arrow svg{
+
+    width:32px;
+
+    height:32px;
+
+    color:var(--primary);
+
+    flex-shrink:0;
+
+}
+
+@media(max-width:768px){
+
+    .flow-card{
+
+        min-width:200px;
+
+    }
+
+}
+
+/*=========================
+ Browser vs Search Engine
+=========================*/
+
+.comparison-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:35px;
+
+    margin-top:70px;
+
+}
+
+.comparison-card{
+
+    padding:40px;
+
+    border-radius:24px;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    backdrop-filter:blur(20px);
+
+    transition:.35s;
+
+}
+
+.comparison-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:var(--primary);
+
+    box-shadow:0 20px 40px rgba(56,189,248,.18);
+
+}
+
+.comparison-icon{
+
+    width:70px;
+
+    height:70px;
+
+    border-radius:18px;
+
+    background:rgba(56,189,248,.12);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    margin-bottom:25px;
+
+}
+
+.comparison-icon svg{
+
+    width:34px;
+
+    height:34px;
+
+    color:var(--primary);
+
+}
+
+.comparison-card h3{
+
+    color:var(--text);
+
+    margin-bottom:15px;
+
+}
+
+.comparison-card h4{
+
+    margin:20px 0 10px;
+
+    color:var(--primary);
+
+}
+
+.comparison-card p,
+.comparison-card li{
+
+    color:var(--text-secondary);
+
+    line-height:1.8;
+
+}
+
+.comparison-card ul{
+
+    padding-left:20px;
+
+}
+
+.comparison-note{
+
+    margin-top:50px;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    display:flex;
+
+    gap:18px;
+
+    align-items:flex-start;
+
+    background:rgba(56,189,248,.08);
+
+    border:1px solid rgba(56,189,248,.18);
+
+}
+
+.comparison-note svg{
+
+    color:var(--primary);
+
+    width:28px;
+
+    height:28px;
+
+    flex-shrink:0;
+
+}
+
+.comparison-note p{
+
+    color:var(--text);
+
+    line-height:1.8;
+
+}
+
+@media(max-width:768px){
+
+    .comparison-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .comparison-note{
+
+        flex-direction:column;
+
+    }
+
+}
+
+/*=========================
+       HTTP vs HTTPS
+=========================*/
+
+.protocol-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:35px;
+
+    margin-top:70px;
+
+}
+
+.protocol-card{
+
+    padding:40px;
+
+    border-radius:24px;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    backdrop-filter:blur(20px);
+
+    transition:.35s;
+
+}
+
+.protocol-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.protocol-icon{
+
+    width:70px;
+
+    height:70px;
+
+    border-radius:18px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    margin-bottom:25px;
+
+}
+
+.protocol-card.danger .protocol-icon{
+
+    background:rgba(239,68,68,.12);
+
+}
+
+.protocol-card.safe .protocol-icon{
+
+    background:rgba(34,197,94,.12);
+
+}
+
+.protocol-card.danger svg{
+
+    color:#ef4444;
+
+}
+
+.protocol-card.safe svg{
+
+    color:#22c55e;
+
+}
+
+.protocol-status{
+
+    display:inline-block;
+
+    margin:15px 0 20px;
+
+    padding:8px 16px;
+
+    border-radius:50px;
+
+    font-size:.9rem;
+
+    font-weight:600;
+
+}
+
+.danger .protocol-status{
+
+    background:rgba(239,68,68,.12);
+
+    color:#ef4444;
+
+}
+
+.safe .protocol-status{
+
+    background:rgba(34,197,94,.12);
+
+    color:#22c55e;
+
+}
+
+.protocol-card ul{
+
+    padding-left:20px;
+
+}
+
+.protocol-card li{
+
+    color:var(--text-secondary);
+
+    margin-bottom:12px;
+
+    line-height:1.7;
+
+}
+
+.tip-box{
+
+    margin-top:50px;
+
+    display:flex;
+
+    gap:18px;
+
+    align-items:flex-start;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    background:rgba(34,197,94,.08);
+
+    border:1px solid rgba(34,197,94,.2);
+
+}
+
+.tip-box svg{
+
+    width:28px;
+
+    height:28px;
+
+    color:#22c55e;
+
+    flex-shrink:0;
+
+}
+
+.tip-box p{
+
+    color:var(--text);
+
+    line-height:1.8;
+
+}
+
+@media(max-width:768px){
+
+    .protocol-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+/*=========================
+      IP Address & DNS
+=========================*/
+
+.network-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:35px;
+
+    margin-top:70px;
+
+}
+
+.network-card{
+
+    padding:40px;
+
+    border-radius:24px;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    backdrop-filter:blur(20px);
+
+    transition:.35s;
+
+}
+
+.network-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:var(--primary);
+
+    box-shadow:0 20px 40px rgba(56,189,248,.18);
+
+}
+
+.network-icon{
+
+    width:70px;
+
+    height:70px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:18px;
+
+    background:rgba(56,189,248,.12);
+
+    margin-bottom:25px;
+
+}
+
+.network-icon svg{
+
+    width:34px;
+
+    height:34px;
+
+    color:var(--primary);
+
+}
+
+.network-card h3{
+
+    color:var(--text);
+
+    margin-bottom:18px;
+
+}
+
+.network-card p{
+
+    color:var(--text-secondary);
+
+    line-height:1.8;
+
+}
+
+.example-box{
+
+    margin:25px 0;
+
+    padding:18px;
+
+    border-radius:16px;
+
+    background:rgba(56,189,248,.08);
+
+    border:1px solid rgba(56,189,248,.18);
+
+}
+
+.example-box strong{
+
+    color:var(--primary);
+
+}
+
+.example-box p{
+
+    margin-top:10px;
+
+    color:var(--text);
+
+    font-weight:600;
+
+}
+
+.analogy{
+
+    margin-top:20px;
+
+    padding:18px;
+
+    border-left:4px solid var(--primary);
+
+    background:rgba(255,255,255,.03);
+
+    color:var(--text-secondary);
+
+    line-height:1.8;
+
+}
+
+@media(max-width:768px){
+
+    .network-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+/*=========================
+    Safe Browsing Tips
+=========================*/
+
+.tips-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+    margin-top:70px;
+
+}
+
+.tip-card{
+
+    padding:35px;
+
+    border-radius:24px;
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:.35s;
+
+}
+
+.tip-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:#22c55e;
+
+    box-shadow:0 20px 45px rgba(34,197,94,.18);
+
+}
+
+.tip-icon{
+
+    width:65px;
+
+    height:65px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:18px;
+
+    background:rgba(34,197,94,.12);
+
+    margin-bottom:22px;
+
+}
+
+.tip-icon svg{
+
+    width:32px;
+
+    height:32px;
+
+    color:#22c55e;
+
+}
+
+.tip-card h3{
+
+    color:var(--text);
+
+    margin-bottom:15px;
+
+}
+
+.tip-card p{
+
+    color:var(--text-secondary);
+
+    line-height:1.8;
+
+}
+
+@media(max-width:992px){
+
+    .tips-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .tips-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
