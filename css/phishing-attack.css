@@ -1,0 +1,758 @@
+/*=========================
+  Phishing Attack Timeline
+=========================*/
+
+.attack-timeline{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:25px;
+
+    margin-top:70px;
+
+}
+
+.attack-card{
+
+    display:flex;
+
+    gap:25px;
+
+    align-items:flex-start;
+
+    padding:30px;
+
+    border-radius:24px;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    backdrop-filter:blur(20px);
+
+    transition:.35s;
+
+}
+
+.attack-card:hover{
+
+    transform:translateX(8px);
+
+    border-color:var(--primary);
+
+    box-shadow:0 18px 40px rgba(56,189,248,.18);
+
+}
+
+.attack-icon{
+
+    width:70px;
+
+    height:70px;
+
+    border-radius:18px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:rgba(56,189,248,.12);
+
+    flex-shrink:0;
+
+}
+
+.attack-icon svg{
+
+    width:34px;
+
+    height:34px;
+
+    color:var(--primary);
+
+}
+
+.attack-step{
+
+    display:inline-block;
+
+    padding:6px 14px;
+
+    border-radius:30px;
+
+    background:rgba(56,189,248,.12);
+
+    color:var(--primary);
+
+    font-size:.85rem;
+
+    font-weight:600;
+
+    margin-bottom:12px;
+
+}
+
+.attack-content h3{
+
+    color:var(--text);
+
+    margin-bottom:12px;
+
+}
+
+.attack-content p{
+
+    color:var(--text-secondary);
+
+    line-height:1.8;
+
+}
+
+.attack-card.success{
+
+    border-color:rgba(239,68,68,.25);
+
+}
+
+.attack-card.success .attack-icon{
+
+    background:rgba(239,68,68,.12);
+
+}
+
+.attack-card.success .attack-icon svg{
+
+    color:#ef4444;
+
+}
+
+@media(max-width:768px){
+
+    .attack-card{
+
+        flex-direction:column;
+
+        text-align:center;
+
+        align-items:center;
+
+    }
+
+}
+
+/*=========================
+      Types of Phishing
+=========================*/
+
+.types-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+    margin-top:70px;
+
+}
+
+.type-card{
+
+    padding:35px;
+
+    border-radius:24px;
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:.35s;
+
+}
+
+.type-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:var(--primary);
+
+    box-shadow:0 20px 45px rgba(56,189,248,.18);
+
+}
+
+.type-icon{
+
+    width:70px;
+
+    height:70px;
+
+    border-radius:18px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:rgba(56,189,248,.12);
+
+    margin-bottom:25px;
+
+}
+
+.type-icon svg{
+
+    width:34px;
+
+    height:34px;
+
+    color:var(--primary);
+
+}
+
+.type-card h3{
+
+    color:var(--text);
+
+    margin-bottom:15px;
+
+}
+
+.type-card p{
+
+    color:var(--text-secondary);
+
+    line-height:1.8;
+
+}
+
+@media(max-width:992px){
+
+    .types-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .types-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+/*=========================
+   Phishing Email Demo
+=========================*/
+
+.email-demo{
+
+    margin-top:70px;
+
+    border-radius:24px;
+
+    overflow:hidden;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(20px);
+
+}
+
+.email-header{
+
+    padding:25px 30px;
+
+    background:rgba(56,189,248,.08);
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:10px;
+
+}
+
+.email-header span{
+
+    color:var(--text);
+
+}
+
+.email-body{
+
+    padding:35px;
+
+}
+
+.email-body p{
+
+    color:var(--text-secondary);
+
+    line-height:1.9;
+
+    margin-bottom:20px;
+
+}
+
+.fake-btn{
+
+    display:inline-block;
+
+    padding:14px 30px;
+
+    background:#ef4444;
+
+    color:#fff;
+
+    border-radius:12px;
+
+    text-decoration:none;
+
+    margin:20px 0;
+
+    font-weight:600;
+
+}
+
+.warning-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:30px;
+
+    margin-top:50px;
+
+}
+
+.warning-card{
+
+    padding:30px;
+
+    border-radius:22px;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:.35s;
+
+}
+
+.warning-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#ef4444;
+
+    box-shadow:0 18px 40px rgba(239,68,68,.15);
+
+}
+
+.warning-card svg{
+
+    width:34px;
+
+    height:34px;
+
+    color:#ef4444;
+
+    margin-bottom:18px;
+
+}
+
+.warning-card h3{
+
+    color:var(--text);
+
+    margin-bottom:12px;
+
+}
+
+.warning-card p{
+
+    color:var(--text-secondary);
+
+    line-height:1.8;
+
+}
+
+@media(max-width:768px){
+
+    .warning-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+/*=========================
+      Red Flags
+=========================*/
+
+.flags-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+    margin-top:70px;
+
+}
+
+.flag-card{
+
+    padding:35px;
+
+    border-radius:24px;
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:.35s;
+
+}
+
+.flag-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:#f59e0b;
+
+    box-shadow:0 20px 40px rgba(245,158,11,.18);
+
+}
+
+.flag-icon{
+
+    width:70px;
+
+    height:70px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:18px;
+
+    background:rgba(245,158,11,.12);
+
+    margin-bottom:22px;
+
+}
+
+.flag-icon svg{
+
+    width:34px;
+
+    height:34px;
+
+    color:#f59e0b;
+
+}
+
+.flag-card h3{
+
+    color:var(--text);
+
+    margin-bottom:15px;
+
+}
+
+.flag-card p{
+
+    color:var(--text-secondary);
+
+    line-height:1.8;
+
+}
+
+.danger-box{
+
+    margin-top:60px;
+
+    display:flex;
+
+    gap:20px;
+
+    padding:30px;
+
+    border-radius:22px;
+
+    background:rgba(239,68,68,.08);
+
+    border:1px solid rgba(239,68,68,.18);
+
+}
+
+.danger-box svg{
+
+    width:34px;
+
+    height:34px;
+
+    color:#ef4444;
+
+    flex-shrink:0;
+
+}
+
+.danger-box h3{
+
+    color:var(--text);
+
+    margin-bottom:10px;
+
+}
+
+.danger-box p{
+
+    color:var(--text-secondary);
+
+    line-height:1.8;
+
+}
+
+@media(max-width:992px){
+
+    .flags-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .flags-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .danger-box{
+
+        flex-direction:column;
+
+    }
+
+}
+
+/*=========================
+    What To Do Section
+=========================*/
+
+.response-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+    margin-top:70px;
+
+}
+
+.response-card{
+
+    position:relative;
+
+    padding:35px;
+
+    border-radius:24px;
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:.35s;
+
+}
+
+.response-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:#22c55e;
+
+    box-shadow:0 20px 40px rgba(34,197,94,.18);
+
+}
+
+.response-number{
+
+    position:absolute;
+
+    top:20px;
+
+    right:20px;
+
+    width:36px;
+
+    height:36px;
+
+    border-radius:50%;
+
+    background:#22c55e;
+
+    color:#fff;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:.9rem;
+
+    font-weight:700;
+
+}
+
+.response-icon{
+
+    width:70px;
+
+    height:70px;
+
+    border-radius:18px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:rgba(34,197,94,.12);
+
+    margin-bottom:22px;
+
+}
+
+.response-icon svg{
+
+    width:34px;
+
+    height:34px;
+
+    color:#22c55e;
+
+}
+
+.response-card h3{
+
+    color:var(--text);
+
+    margin-bottom:15px;
+
+}
+
+.response-card p{
+
+    color:var(--text-secondary);
+
+    line-height:1.8;
+
+}
+
+.safe-box{
+
+    margin-top:60px;
+
+    display:flex;
+
+    gap:20px;
+
+    padding:30px;
+
+    border-radius:24px;
+
+    background:rgba(34,197,94,.08);
+
+    border:1px solid rgba(34,197,94,.18);
+
+}
+
+.safe-box svg{
+
+    width:36px;
+
+    height:36px;
+
+    color:#22c55e;
+
+    flex-shrink:0;
+
+}
+
+.safe-box h3{
+
+    color:var(--text);
+
+    margin-bottom:10px;
+
+}
+
+.safe-box p{
+
+    color:var(--text-secondary);
+
+    line-height:1.8;
+
+}
+
+@media(max-width:992px){
+
+    .response-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .response-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .safe-box{
+
+        flex-direction:column;
+
+    }
+
+}
+
