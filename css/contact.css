@@ -1,7 +1,9 @@
 /*=========================
       Contact Hero
 =========================*/
-
+html{
+    scroll-behavior: smooth;
+}
 .contact-hero {
 
     padding: 180px 0 120px;

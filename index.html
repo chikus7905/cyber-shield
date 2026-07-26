@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     
 
     <!--=============CSS============ -->
@@ -52,6 +52,9 @@
     <header>
       <nav class="navbar">
         <div class="container nav-container">
+             <div class="container nav-container">
+          <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox" />
+<!-- menu responsive using cluade  -->
           <!-- Logo -->
           <div class="logo">
             <div class="logo-icon">
@@ -66,7 +69,7 @@
 
           <!-- Navigation -->
           <ul class="nav-links">
-            <li><a href="home" class="active">Home</a></li>
+            <li><a href="#home" class="active">Home</a></li>
 
             <li class="dropdown">
               <a href="#">
@@ -88,20 +91,19 @@
               </a>
 
               <ul class="dropdown-menu">
-                <li><a href="#learn">What is Cybersecurity</a></li>
+                <li><a href="learn.html#categories">What is Cybersecurity</a></li>
                 <li><a href="#internet">Internet Security</a></li>
                 <li><a href="#threats">Cyber Threats</a></li>
-                <li><a href="#">Protection Methods</a></li>
+                <li><a href="learn.html#lessons">Protection Methods</a></li>
                 <li><a href="#simulation">Simulation</a></li>
                 <li><a href="#quiz">CyberSecurity Quiz</a></li>
               </ul>
             </li>
 
-            <li><a href="vision-roadmap.html">Timeline</a></li>
+            <li><a href="vision-roadmap.html#timeline">Timeline</a></li>
             <li><a href="About.html">About</a></li>
             <li class="dropdown">
-              <a href="#"
-                >Resources
+              <a href="contact.html">More
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -112,23 +114,29 @@
                   stroke-width="2"
                   stroke-linecap="round"
                   stroke-linejoin="round"
-                  class="lucide lucide-chevron-down-icon lucide-chevron-down chevron"
-                >
+                  class="lucide lucide-chevron-down-icon lucide-chevron-down chevron">
                   <path d="m6 9 6 6 6-6" />
                 </svg>
               </a>
 
               <ul class="dropdown-menu">
-                <li><a href="#">Career Roadmap</a></li>
-                <li><a href="#">Glossary</a></li>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="learn.html#roadmap">Roadmap</a></li>
+                <li><a href="About.html#developer">Meet Developer</a></li>
+                <li><a href="contact.html#faq">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="learn.html">Questions?</a></li>
               </ul>
             </li>
           </ul>
 
           <!-- Right Side -->
           <div class="nav-actions">
+            <label for="nav-toggle" class="menu-toggle" aria-label="Toggle menu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </label>
+
             <button class="theme-toggle" aria-label="Toggle Theme">
               <img
                 src="assets/Icons/moon.png"
@@ -137,7 +145,7 @@
               />
             </button>
 
-            <a href="#" class="btn"> Get Started </a>
+            <a href="learn.html" class="btn"> Get Started </a>
           </div>
         </div>
       </nav>
@@ -166,29 +174,15 @@
             </p>
 
             <div class="hero-buttons">
-              <a href="#" class="btn">Explore Topics </a>
+              <a href="learn.html" class="btn">Explore Topics </a>
 
-              <a href="#" class="btn-secondary">Watch Timeline</a>
+              <a href="vision-roadmap.html" class="btn-secondary">Watch Timeline</a>
             </div>
           </div>
 
           <div class="hero-image">
             <img src="assets/hero/cyber-globe.png" alt="cyber-globe" />
-            <!-- <div class="floating-card card-1">
-                          <h3>100+</h3>
-                          <p>Security Concepts</p>
-                      </div>
-
-                      <div class="floating-card card-2">
-                          <h3>50+</h3>
-                          <p>Interactive Topics</p>
-                      </div>
-
-                      <div class="floating-card card-3">
-                          <h3>2026</h3>
-                          <p>Future Technologies</p>
-                      </div> -->
-
+    
             <div class="floating-icon icon-1">
               <img src="assets/icons/sheild-icon.png" alt="Shield" />
             </div>
@@ -221,111 +215,79 @@
 <section class="mission-section" id="mission">
 
     <div class="container">
-
         <div class="section-header">
-
             <span class="section-tag">
                 <i data-lucide="heart-handshake"></i>
-                Our Mission 💙
+                Our Mission 
             </span>
-
             <h2 class="section-title">
                 Why <span>CyberShield</span> Exists
             </h2>
-
             <p class="section-description">
-
                 Cyber threats are growing every day, but learning cybersecurity
                 shouldn't feel difficult or overwhelming.
 
                 CyberShield was created to make cybersecurity simple,
                 interactive, and accessible for everyone through visual
                 explanations, real-world examples, and practical learning.
-
                 <br><br>
-
                 This project also serves as my frontend development portfolio,
                 where I applied my HTML, CSS, and JavaScript skills to build a
                 modern, responsive, and interactive educational platform.
-
             </p>
-
         </div>
 
         <div class="mission-grid">
-
             <div class="mission-card">
-
                 <div class="mission-icon">
                     <i data-lucide="book-open"></i>
                 </div>
-
                 <h3>Learn Simply</h3>
-
                 <p>
                     Cybersecurity concepts explained in a beginner-friendly way,
                     making learning easier without complicated technical terms.
                 </p>
-
             </div>
 
             <div class="mission-card">
-
                 <div class="mission-icon">
                     <i data-lucide="monitor-play"></i>
                 </div>
-
                 <h3>Learn by Doing</h3>
-
                 <p>
                     Interactive timelines, simulations, and practical examples
                     help transform theory into real understanding.
                 </p>
-
             </div>
 
             <div class="mission-card">
-
                 <div class="mission-icon">
                     <i data-lucide="shield-check"></i>
                 </div>
-
                 <h3>Stay Protected</h3>
-
                 <p>
                     Learn practical cybersecurity skills that help you stay
                     safe online and protect your digital identity.
                 </p>
-
             </div>
 
         </div>
-
         <div class="mission-quote">
-
             <h3>
                 <!-- "The best defense against cyber threats is awareness." -->
                  "Knowledge is the strongest firewall."
             </h3>
-
             <p>
                 — CyberShield
             </p>
-
         </div>
 
         <div class="mission-action">
-
-            <a href="#learn" class="btn btn-primary">
-
+            <a href="learn.html" class="btn btn-primary">
                 Start Learning
-
                 <i data-lucide="arrow-right"></i>
-
             </a>
-
         </div>
-
     </div>
 
 </section>
@@ -356,7 +318,7 @@
                 computer systems.
               </p>
 
-              <a href="#">Learn More</a>
+              <a href="Topics/malware.html">Learn More</a>
             </div>
 
             <!--===============- card 2===================== -->
@@ -369,7 +331,7 @@
                 sensitive information.
               </p>
 
-              <a href="#">Learn More</a>
+              <a href="Topics/phishing-attacks.html">Learn More</a>
             </div>
 
             <!--===============- card 3===================== -->
@@ -379,7 +341,7 @@
 
               <p>Malicious software are designed to damage computer systems.</p>
 
-              <a href="#">Learn More</a>
+              <a href="Topics/malware.html">Learn More</a>
             </div>
 
             <!--===============- card 4===================== -->
@@ -392,35 +354,30 @@
                 outgoing network traffic.
               </p>
 
-              <a href="#">Learn More</a>
+              <a href="Topics/network-security.html#firewall">Learn More</a>
             </div>
 
             <!--===============- card 5===================== -->
             <div class="essential-card">
               <img
                 src="assets/Icons/encryption-icon.png"
-                alt="encryption-icon"
-              />
+                alt="encryption-icon"/>
               <h3>Encryption</h3>
-
               <p>
                 Converts readable data into unreadable code to keep it secure.
               </p>
-
-              <a href="#">Learn More</a>
+              <a href="Topics/password-security.html">Learn More</a>
             </div>
 
             <!--===============- card 6===================== -->
             <div class="essential-card">
               <img src="assets/Icons/network_icon.png" alt="network" />
               <h3>Network Security</h3>
-
               <p>
                 Protects computer networks from unauthorized access and cyber
                 attacks.
               </p>
-
-              <a href="#">Learn More</a>
+              <a href="Topics/network-security.html">Learn More</a>
             </div>
           </div>
         </div>
@@ -818,162 +775,102 @@
     </main>
 
     <footer class="footer">
-
     <div class="container">
-
         <div class="footer-grid">
 
             <!-- Brand -->
             <div class="footer-column">
-
                 <a href="#home" class="footer-logo">
-
                     <img src="assets/Icons/sheild-icon.png" alt="CyberShield Logo">
-
                     <span>CyberShield</span>
-
                 </a>
-
                 <p class="footer-description">
                     Learn cybersecurity through interactive lessons, real-world simulations, and practical knowledge. Our mission is to make cybersecurity education simple, engaging, and accessible for everyone.
                 </p>
-
                 <div class="footer-social">
-
-                    <a href="#" aria-label="GitHub">
+                    <a href="https://github.com/chiku7905" aria-label="GitHub">
                         <i class="fa-brands fa-github"></i>
                     </a>
 
-                    <a href="#" aria-label="LinkedIn">
+                    <a href="https://linkedin.com/in/kartavyas21" aria-label="LinkedIn">
                         <i class="fa-brands fa-linkedin"></i>
                     </a>
 
-                    <a href="#" aria-label="Twitter">
+                    <a href="https://instagram.com/deepak_rajp0ot" aria-label="Twitter">
                         <i class="fa-brands fa-instagram"></i>
                     </a>
 
                     <a href="mailto:kartavyasingh9044@gmail.com" aria-label="Email">
                         <i data-lucide="mail"></i>
                     </a>
-
                 </div>
 
             </div>
-
             <!-- Quick Links -->
             <div class="footer-column">
-
                 <h3>Quick Links</h3>
-
                 <ul>
-
                     <li><a href="#home">Home</a></li>
-
                     <li><a href="#essentials">Essentials</a></li>
-
                     <li><a href="#internet">Internet Basics</a></li>
-
                     <li><a href="#simulation">Simulation</a></li>
-
                     <li><a href="#quiz">Quiz</a></li>
-
                 </ul>
-
             </div>
 
             <!-- Learning -->
             <div class="footer-column">
-
                 <h3>Learning</h3>
-
                 <ul>
-
-                    <li><a href="#">Password Security</a></li>
-
-                    <li><a href="#">Phishing</a></li>
-
-                    <li><a href="#">Malware</a></li>
-
-                    <li><a href="#">Network Security</a></li>
-
-                    <li><a href="#">Encryption</a></li>
-
+                    <li><a href="Topics/password-security.html">Password Security</a></li>
+                    <li><a href="Topics/phishing-attacks.html">Phishing</a></li>
+                    <li><a href="Topics/malware.html">Malware</a></li>
+                    <li><a href="Topics/network-security.html">Network Security</a></li>
+                    <li><a href="Topics/internet-basics.html">About Internet</a></li>
                 </ul>
-
             </div>
 
             <!-- Contact -->
             <div class="footer-column">
-
                 <h3>Contact</h3>
-
                 <ul class="contact-list">
-
                     <li>
                         <i data-lucide="mail"></i>
                         <a href="mailto:kartavasingh9044@gmail.com">contact@cybershield.com</a>
                     </li>
-
                     <li>
                         <i data-lucide="map-pin"></i>
                         India
                     </li>
-
                     <li>
                         <i data-lucide="shield-check"></i>
                         Secure Learning Platform
                     </li>
-
                 </ul>
-
             </div>
-
         </div>
-
         <div class="footer-bottom">
 
     <div class="footer-bottom-left">
-
         <p class="footer-tagline">
             🛡 Think Before You Click.
             <span>Stay Secure.</span>
         </p>
-
-        <p class="copyright">
-            © 2026 CyberShield. All Rights Reserved.
-        </p>
-
+        <p class="copyright">© 2026 CyberShield. All Rights Reserved.</p>
     </div>
-
-    <p class="made-with">
-
-        Made with
-
-        <span class="heart">💗</span>
-
-        HTML, CSS,
-
-        <span class="coffee">☕</span>
-
-        Coffee & Curiosity
-
-        by
-
-        <span class="author">🐵</span>
-
+    <p class="made-with">Made with
+            <span class="heart">💗</span>HTML, CSS,<span class="coffee">☕</span>Coffee & Curiosity
+                by
+         <span class="author">🐵</span>
     </p>
 
     <a href="#home" class="back-to-top" aria-label="Back to Top">
-
         <i data-lucide="arrow-up"></i>
-
     </a>
-
 </div>
-
     </div>
-
 </footer>
+
 <script src="https://unpkg.com/lucide@latest"></script>
 <script>
     lucide.createIcons();

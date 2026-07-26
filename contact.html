@@ -51,10 +51,13 @@
         <!-- Navbar -->
       <nav class="navbar">
         <div class="container nav-container">
+             <div class="container nav-container">
+          <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox" />
+<!-- menu responsive using cluade  -->
           <!-- Logo -->
           <div class="logo">
             <div class="logo-icon">
-              <img src="../assets/Icons/sheild-icon.png" alt="CyberShield-logo" />
+              <img src="assets/Icons/sheild-icon.png" alt="CyberShield-logo" />
             </div>
 
             <div class="logo-text">
@@ -129,6 +132,13 @@
 
           <!-- Right Side -->
           <div class="nav-actions">
+
+            <label for="nav-toggle" class="menu-toggle" aria-label="Toggle menu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </label>
+
             <button class="theme-toggle" aria-label="Toggle Theme">
               <img
                 src="../assets/Icons/moon.png"
@@ -180,136 +190,82 @@
 =========================== -->
 
 <section class="lesson-section" id="contact">
-
     <div class="container">
-
         <div class="contact-wrapper">
-
             <!-- Left Side -->
-
             <div class="contact-info">
-
                 <span class="section-tag">
-
                     <i data-lucide="mail"></i>
-
                     Get In Touch
-
                 </span>
-
                 <h2>
-
                     Let's Build a <span>Safer Internet</span> Together
-
                 </h2>
-
                 <p>
-
                     Whether you have feedback, suggestions, or collaboration ideas, I'd love to hear from you. Feel free to connect using any of the methods below.
-
                 </p>
 
                 <!-- Contact Cards -->
-
                 <div class="contact-card">
-
                     <div class="contact-icon">
-
                         <i data-lucide="mail"></i>
-
                     </div>
-
                     <div>
-
                         <h3>Email</h3>
-
                         <p>kartavyasingh9044@gmail.com</p>
-
                     </div>
-
                 </div>
-
                 <div class="contact-card">
-
                     <div class="contact-icon">
-
                         <i class="fa-brands fa-linkedin"></i>
-
                     </div>
 
                     <div>
-
                         <h3>LinkedIn</h3>
-
                         <p>linkedin.com/in/kartavyas21</p>
-
                     </div>
-
                 </div>
 
                 <div class="contact-card">
-
                     <div class="contact-icon">
-
                         <i class="fa-brands fa-github"></i>
-
                     </div>
 
                     <div>
-
                         <h3>GitHub</h3>
-
                         <p>github.com/chiku7905</p>
-
                     </div>
-
                 </div>
 
                 <div class="contact-card">
-
                     <div class="contact-icon">
-
                         <i data-lucide="map-pin"></i>
-
                     </div>
 
                     <div>
-
                         <h3>Location</h3>
-
                         <p>Uttar Pradesh, India</p>
-
                     </div>
-
                 </div>
 
             </div>
-
             <!-- Right Side -->
-
             <div class="contact-form">
-
                 <h2>Send a Message</h2>
-
                 <p>
-
                     Fill out the form below. (Prototype UI — not connected to a backend yet.)
-
                 </p>
 
                 <form>
-
                     <input
                         type="text"
                         placeholder="Your Name"
-                        required
-                    >
+                        required>
 
                     <input
                         type="email"
                         placeholder="Email Address"
-                        required
-                    >
+                        required>
 
                     <input
                         type="text"
@@ -318,36 +274,27 @@
 
                     <textarea
                         rows="6"
-                        placeholder="Write your message..."
-                    ></textarea>
-
+                        placeholder="Write your message..." ></textarea>
                     <button class="btn btn-primary">
-
                         Send Message
-
                     </button>
-
                 </form>
-
             </div>
-
         </div>
-
     </div>
-
 </section>
 
 <!-- ==========================
         FAQ Section
 ========================== -->
 
-<section class="lesson-section">
+<section class="lesson-section" >
 
     <div class="container">
 
         <div class="section-header">
 
-            <span class="section-tag">
+            <span class="section-tag" id="faq">
 
                 <i data-lucide="circle-help"></i>
 
@@ -522,7 +469,7 @@
 
                 <a href="#home" class="footer-logo">
 
-                    <img src="../assets/Icons/sheild-icon.png" alt="CyberShield Logo">
+                    <img src="assets/Icons/sheild-icon.png" alt="CyberShield Logo">
 
                     <span>CyberShield</span>
 
