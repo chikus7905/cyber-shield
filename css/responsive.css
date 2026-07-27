@@ -241,12 +241,12 @@
     }
 
     .logo-icon img {
-        width: 55px;
-        height: 55px;
+        width: 80px;
+        height: 80px;
     }
 
     .logo-text h2 {
-        font-size: 1.15rem;
+        font-size: 1.6rem;
     }
 
     .hero {
@@ -300,11 +300,6 @@
         max-width: 320px;
     }
 
-    /* hide decorative floating icons on small screens to avoid overlap */
-    .icon-2,
-    .icon-3 {
-        display: none;
-    }
 
     .scroll-indicator {
         display: none;

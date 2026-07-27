@@ -219,7 +219,7 @@ body {
     left: 0;
     min-width: 250px;
     list-style: none;
-    background: rgba(17, 25, 40, .85);
+    background: var(--surface);
     backdrop-filter: blur(18px);
     border: 1px solid rgba(255, 255, 255, .1);
     border-radius: 16px;
@@ -231,6 +231,7 @@ body {
     transition: opacity .3s ease,
         transform .3s ease,
         visibility .3s ease;
+        z-index: 99;
 }
 
 .dropdown:hover .dropdown-menu {
@@ -377,6 +378,7 @@ body {
     height: auto;
     filter: drop-shadow(0 0 20px rgba(56, 189, 248, .35)) drop-shadow(0 0 60px rgba(56, 189, 248, .25));
     animation: float 5s ease-in-out infinite;
+    animation: rotateGlobe 35s linear infinite;
 }
 
 .btn-secondary {
@@ -460,23 +462,11 @@ body {
 ================================ */
 .floating-icon {
     position: absolute;
-
     width: 60px;
     height: 60px;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
-    /* background: rgba(17,25,40,.75);
-    backdrop-filter: blur(12px);
-
-    border: 1px solid rgba(255,255,255,.08);
-
-    border-radius: 16px;
-
-    box-shadow: 0 8px 20px rgba(0,0,0,.25); */
-
     animation: floatIcon 4s ease-in-out infinite;
 }
 
@@ -487,22 +477,22 @@ body {
 
 .icon-1 {
     top: 12%;
-    left: 40px;
+    left:30px;
 }
 
 .icon-2 {
-    top: 25%;
-    right: -25px;
+    top: 10%;
+    right: 10px;
 }
 
 .icon-3 {
     bottom: 12%;
-    right: -20px;
+    right: 10px;
 }
 
 .icon-4 {
     bottom: 15%;
-    left: 40px;
+    left: 30px;
 }
 
 .icon-1 {
